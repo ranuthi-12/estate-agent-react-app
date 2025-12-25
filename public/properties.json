@@ -9,6 +9,16 @@
       "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
       "picture": "images/prop1pic1small.jpg",
+      "images": [
+        "images/prop1_1.jpg",
+        "images/prop1_2.jpg",
+        "images/prop1_3.jpg",
+        "images/prop1_4.jpg",
+        "images/prop1_5.jpg",
+        "images/prop1_6.jpg"
+      ],
+      "floorplan": "images/prop1_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop1.html",
       "added": {
         "month": "October",
@@ -25,6 +35,16 @@
       "description": "Presented in excellent decorative order throughout is this two double bedroom, two bathroom, garden flat. <br>The modern fitted kitchen is open plan to the living room which boasts solid wooden floors and includes integrated appliances including a dishwasher & a washing machine. This large open plan benefits from bi folding doors onto a secluded private courtyard garden. Both bedrooms are double sized, and the family bathroom boasts a matching three piece suite a shower attachment over the bath. There is also a separate wet room. There are walnut doors throughout and wiring for Sky TV/aerial points in the living room/kitchen and both bedrooms.<br>This apartment being only five years old, is still under a 10 year building guarantee...",
       "location": "Crofton Road Orpington BR6",
       "picture": "images/prop2pic1small.jpg",
+      "images": [
+        "images/prop2_1.jpg",
+        "images/prop2_2.jpg",
+        "images/prop2_3.jpg",
+        "images/prop2_4.jpg",
+        "images/prop2_5.jpg",
+        "images/prop2_6.jpg"
+      ],
+      "floorplan": "images/prop2_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop2.html",
       "added": {
         "month": "September",
@@ -41,6 +61,16 @@
       "description": "Spacious four bedroom detached property located close to transport links and local amenities. Features include a large garden, garage, and modern kitchen.",
       "location": "High Street, Bromley BR1",
       "picture": "images/prop3pic1small.jpg",
+      "images": [
+        "images/prop3_1.jpg",
+        "images/prop3_2.jpg",
+        "images/prop3_3.jpg",
+        "images/prop3_4.jpg",
+        "images/prop3_5.jpg",
+        "images/prop3_6.jpg"
+      ],
+      "floorplan": "images/prop3_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop3.html",
       "added": {
         "month": "November",
@@ -57,6 +87,16 @@
       "description": "Well-presented one bedroom flat ideal for first-time buyers or investors. Located close to local shops, cafes and public transport links with easy access to Central London.",
       "location": "Lewisham High Street SE13",
       "picture": "images/prop4pic1small.jpg",
+      "images": [
+        "images/prop4_1.jpg",
+        "images/prop4_2.jpg",
+        "images/prop4_3.jpg",
+        "images/prop4_4.jpg",
+        "images/prop4_5.jpg",
+        "images/prop4_6.jpg"
+      ],
+      "floorplan": "images/prop4_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop4.html",
       "added": {
         "month": "August",
@@ -73,6 +113,16 @@
       "description": "Impressive five bedroom detached family home offering spacious living accommodation, a private driveway and a large rear garden. Situated in a quiet residential area close to schools.",
       "location": "Oakwood Drive, Chislehurst BR7",
       "picture": "images/prop5pic1small.jpg",
+      "images": [
+        "images/prop5_1.jpg",
+        "images/prop5_2.jpg",
+        "images/prop5_3.jpg",
+        "images/prop5_4.jpg",
+        "images/prop5_5.jpg",
+        "images/prop5_6.jpg"
+      ],
+      "floorplan": "images/prop5_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop5.html",
       "added": {
         "month": "July",
@@ -89,6 +139,16 @@
       "description": "Modern three bedroom apartment with open-plan living space, balcony and underground parking. Located within walking distance of the station and local amenities.",
       "location": "Canary Wharf E14",
       "picture": "images/prop6pic1small.jpg",
+      "images": [
+        "images/prop6_1.jpg",
+        "images/prop6_2.jpg",
+        "images/prop6_3.jpg",
+        "images/prop6_4.jpg",
+        "images/prop6_5.jpg",
+        "images/prop6_6.jpg"
+      ],
+      "floorplan": "images/prop6_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop6.html",
       "added": {
         "month": "November",
@@ -105,6 +165,16 @@
       "description": "Charming two bedroom terraced house offering a bright living area and low-maintenance garden. Ideal for young professionals or small families.",
       "location": "Greenwich Park Road SE10",
       "picture": "images/prop7pic1small.jpg",
+      "images": [
+        "images/prop7_1.jpg",
+        "images/prop7_2.jpg",
+        "images/prop7_3.jpg",
+        "images/prop7_4.jpg",
+        "images/prop7_5.jpg",
+        "images/prop7_6.jpg"
+      ],
+      "floorplan": "images/prop7_floorplan.jpg",
+      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop7.html",
       "added": {
         "month": "June",

@@ -1,7 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const ImageCard = ({ property }) => {
   const {
+    id,
     type,
     bedrooms,
     price,
@@ -28,6 +30,10 @@ const ImageCard = ({ property }) => {
       </p>
 
       <p>{description}</p>
+
+      <Link to={`/property/${id}`}>
+        View Property
+      </Link>
 
       <button>Add to Favourites</button>
     </article>

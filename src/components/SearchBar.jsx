@@ -9,7 +9,7 @@ const SearchBar = ({ searchTerm,setSearchTerm }) => {
       <form>
         {/* Location */}
         <label> Location / Postcode</label><br />
-        <input type="text" value={searchTerm.location} placeholder="Enter location or postcode"
+        <input type="search" value={searchTerm.location} placeholder="e.g. BR5, Orpington"
             onChange={(e) => 
                 setSearchTerm({...searchTerm, location: e.target.value})
             }
@@ -66,8 +66,8 @@ const SearchBar = ({ searchTerm,setSearchTerm }) => {
             <option value="2022">2022+</option>
         </select><br /><br />
 
-        <button type="button">For Sale</button>
-        <button type="button">For Rent</button>
+
+        <button type="button">Search</button>
       </form>
     </section>
   );
