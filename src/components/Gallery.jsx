@@ -13,13 +13,30 @@ const Gallery = ({searchTerm}) => {
       });
   }, []);
 
-  const filteredProperties = properties.filter((property) =>
-    property.location.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredProperties = properties.filter((property) => {
+    return (
+        //Location filter 
+        (!searchTerm.location || property.location.toLowerCase().includes(searchTerm.location.toLowerCase())) &&
+
+        //Property Type filter
+        (!searchTerm.type || property.type === searchTerm.type) &&
+
+        //Bedrooms filter
+        (!searchTerm.bedrooms || property.bedrooms >= Number(searchTerm.bedrooms)) &&
+
+        //Price filter
+        (!searchTerm.minPrice || property.price >= Number(searchTerm.minPrice)) &&
+        (!searchTerm.maxPrice || property.price <= Number(searchTerm.maxPrice)) &&
+
+        //Date Added filter
+        (!searchTerm.year || property.year >= Number(searchTerm.year))
+    );
+  });
 
   return (
     <section className="gallery">
       {filteredProperties.length === 0 ? (
-        <p>No properties found.</p>
+        <p>No properties match your search criteria.</p>
       ) : (
 
         filteredProperties.map((property) => (

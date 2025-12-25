@@ -3,11 +3,18 @@ import SearchBar from './components/SearchBar'
 import Gallery from './components/Gallery'
 
 function App() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState({
+    location: "",
+    type: "",
+    bedrooms:"",
+    minPrice: "",
+    maxPrice: "",
+    year: ""
+  });
   
   return(
     <div>
-      <SearchBar setSearchTerm={setSearchTerm} />
+      <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
       <Gallery searchTerm={searchTerm} />
     </div>
   )
