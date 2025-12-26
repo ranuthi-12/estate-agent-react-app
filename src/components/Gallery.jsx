@@ -47,11 +47,25 @@ const Gallery = ({searchTerm, favourites, setFavourites}) => {
     );
   });
 
+  const handleRemoveDrop = (e) => {
+    e.preventDefault();
+    const propertyId =
+      e.dataTransfer.getData("propertyId");
+    if (propertyId) {
+      removeFromFavourites(propertyId);
+    }
+  };
+
+
   return (
     <section className="gallery">
 
       {/* Search Results */}
-      <div className="results">
+      <div 
+        className="results"
+        onDragOver={(e) => e.preventDefault()}
+        onDrop={handleRemoveDrop}
+      >
         {filteredProperties.length === 0 ? (
           <p>No properties match your search criteria.</p>
         ) : (
@@ -67,6 +81,7 @@ const Gallery = ({searchTerm, favourites, setFavourites}) => {
         favourites={favourites}
         removeFromFavourites={removeFromFavourites}
         clearFavourites={() => setFavourites([])}
+        addToFavourites={addToFavourites}
       />
     </section>
   );

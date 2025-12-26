@@ -14,8 +14,17 @@ const ImageCard = ({ property, addToFavourites }) => {
     added
   } = property;
 
+  const handleDragStart = (e) => {
+    e.dataTransfer.setData("property", 
+      JSON.stringify(property)
+    );
+  }
+
   return (
-    <article className="property-card">
+    <article className="property-card"
+        draggable
+        onDragStart={handleDragStart}
+    >
       <img src={`/${picture}`} alt={type} />
 
       <h3>{type}</h3>
