@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import ImageCard from "./ImageCard";
+import Favourites from "./Favourites";
 
-const Gallery = ({searchTerm}) => {
+const Gallery = ({searchTerm, favourites, setFavourites}) => {
+
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
@@ -12,6 +14,18 @@ const Gallery = ({searchTerm}) => {
         console.error("Error loading properties:", error);
       });
   }, []);
+
+
+  // Add to Favourites
+  const addToFavourites = (property) => {
+    if(!favourites.find((fav) => fav.id === property.id))
+      setFavourites([...favourites, property]);
+  }
+
+  //Remove From Favourites
+  const removeFromFavourites = (id) => {
+    setFavourites(favourites.filter((fav) => fav.id !== id));
+  }
 
   const filteredProperties = properties.filter((property) => {
     return (
@@ -29,20 +43,31 @@ const Gallery = ({searchTerm}) => {
         (!searchTerm.maxPrice || property.price <= Number(searchTerm.maxPrice)) &&
 
         //Date Added filter
-        (!searchTerm.year || property.year >= Number(searchTerm.year))
+        (!searchTerm.year || property.added.year >= Number(searchTerm.year))
     );
   });
 
   return (
     <section className="gallery">
-      {filteredProperties.length === 0 ? (
-        <p>No properties match your search criteria.</p>
-      ) : (
 
-        filteredProperties.map((property) => (
-            <ImageCard key={property.id} property={property} />
-        ))
-    )}
+      {/* Search Results */}
+      <div className="results">
+        {filteredProperties.length === 0 ? (
+          <p>No properties match your search criteria.</p>
+        ) : (
+
+          filteredProperties.map((property) => (
+              <ImageCard key={property.id} property={property} addToFavourites={addToFavourites} />
+          ))
+        )}
+      </div>
+
+      {/* Favourites Sidebar */}
+      <Favourites
+        favourites={favourites}
+        removeFromFavourites={removeFromFavourites}
+        clearFavourites={() => setFavourites([])}
+      />
     </section>
   );
 };

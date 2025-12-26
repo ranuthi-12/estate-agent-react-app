@@ -13,6 +13,8 @@ function App() {
     maxPrice: "",
     year: ""
   });
+
+  const [favourites, setFavourites] = useState([]);
   
   return(
     <Routes>
@@ -21,7 +23,11 @@ function App() {
       <Route path='/' element={
         <div>
           <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
-          <Gallery searchTerm={searchTerm} />
+          <Gallery 
+            searchTerm={searchTerm} 
+            favourites={favourites}
+            setFavourites={setFavourites} 
+          />
         </div>
       } />
 

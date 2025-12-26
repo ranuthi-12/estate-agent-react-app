@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ImageCard = ({ property }) => {
+const ImageCard = ({ property, addToFavourites }) => {
   const {
     id,
     type,
@@ -35,7 +35,9 @@ const ImageCard = ({ property }) => {
         View Property
       </Link>
 
-      <button>Add to Favourites</button>
+      <button onClick={() => addToFavourites(property)}>
+        Add to Favourites
+      </button>
     </article>
   );
 };
