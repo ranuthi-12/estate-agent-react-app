@@ -2,7 +2,7 @@ import React from 'react';
 
 const SearchBar = ({ searchTerm,setSearchTerm }) => {
   return (
-    <section>
+    <section id="search-bar">
       <h1>Believe in Finding it</h1>
       <h3>Search for the property you are looking for</h3>
 

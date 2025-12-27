@@ -11,7 +11,9 @@ const Favourites = ({ favourites, removeFromFavourites, clearFavourites, addToFa
     };
 
     return (
-        <aside className="favourites"
+        <aside
+            id="favourites" 
+            className="favourites"
             onDragOver={(e) => e.preventDefault()}
             onDrop = {handleDrop}
         >
