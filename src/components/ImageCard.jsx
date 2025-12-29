@@ -25,28 +25,32 @@ const ImageCard = ({ property, addToFavourites }) => {
         draggable
         onDragStart={handleDragStart}
     >
-      <img src={`/${picture}`} alt={type} />
+      <div className="property-image-wrapper">
+        <img src={`/${picture}`} alt={type} className="property-image"/>
+        <div className="property-badge">{tenure}</div>
+      </div>
 
-      <h3>{type}</h3>
-      <p><strong>Price:</strong> £{price}</p>
-      <p><strong>Bedrooms:</strong> {bedrooms}</p>
-      <p><strong>Tenure:</strong> {tenure}</p>
-      <p><strong>Location:</strong> {location}</p>
+      <div className="property-content">
 
-      <p>
-        <strong>Added:</strong>{" "}
-        {added.month} {added.day}, {added.year}
-      </p>
+        <div className="property-price">£{price.toLocaleString()}</div>
+        <h3 className="property-title">{type}</h3>
+        <p>{bedrooms} bed</p>
+        <p>{location}</p>
+        <p>{description}</p>
+        <p>
+          Added: {added.month} {added.day}, {added.year}
+        </p>
+        
+        <div className="mt-auto">
+          <Link to={`/property/${id}`} className="btn btn-outline-primary btn-sm me-2">
+            View Property
+          </Link>
 
-      <p>{description}</p>
-
-      <Link to={`/property/${id}`}>
-        View Property
-      </Link>
-
-      <button onClick={() => addToFavourites(property)}>
-        Add to Favourites
-      </button>
+          <button className="btn btn-primary btn-sm" onClick={() => addToFavourites(property)}>
+            Add to Favourites
+          </button>
+        </div>
+      </div>
     </article>
   );
 };

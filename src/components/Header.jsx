@@ -8,9 +8,7 @@ const Header = () => {
         <Link to="/" className="site-title">
           Estate Agent
         </Link>
-        <span className="site-tagline">
-          Find your perfect property
-        </span>
+        
       </div>
 
       <nav className="main-nav">

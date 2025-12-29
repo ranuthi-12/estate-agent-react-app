@@ -58,21 +58,23 @@ const Gallery = ({searchTerm, favourites, setFavourites}) => {
 
 
   return (
-    <section className="gallery">
+    <section className="gallery-section">
 
       {/* Search Results */}
       <div 
-        className="results"
+        className="gallery-main"
         onDragOver={(e) => e.preventDefault()}
         onDrop={handleRemoveDrop}
       >
         {filteredProperties.length === 0 ? (
-          <p>No properties match your search criteria.</p>
+          <p className="empty-state">No properties match your search criteria.</p>
         ) : (
 
-          filteredProperties.map((property) => (
-              <ImageCard key={property.id} property={property} addToFavourites={addToFavourites} />
-          ))
+          <div className="gallery-grid">
+            {filteredProperties.map((property) => (
+                <ImageCard key={property.id} property={property} addToFavourites={addToFavourites} />
+            ))}
+          </div>
         )}
       </div>
 

@@ -13,31 +13,38 @@ const Favourites = ({ favourites, removeFromFavourites, clearFavourites, addToFa
     return (
         <aside
             id="favourites" 
-            className="favourites"
+            className="fav-sidebar"
             onDragOver={(e) => e.preventDefault()}
             onDrop = {handleDrop}
         >
-            <h3>Favourites</h3>
+            <div className="fav-header">
+               <h3>Favourites</h3>
+            </div>
 
             {favourites.length === 0 && <p>Drag Properties Here.</p>}
 
-            {favourites.map((property) => (
-                <div 
-                key={property.id}
-                draggable
-                onDragStart={(e) =>
-                    e.dataTransfer.setData("propertyId", property.id)
-                }
-                >
-                    <p>{property.type} - £{property.price}</p>
-                    <button onClick={() => removeFromFavourites(property.id)}>
-                        Remove
-                    </button>
-                </div>
-            ))}
+            <div className="fav-list">
+                {favourites.map((property) => (
+                    <div 
+                        key={property.id}
+                        className="fav-item"
+                        draggable
+                        onDragStart={(e) =>
+                            e.dataTransfer.setData("propertyId", property.id)
+                        }
+                    >
+                        <div className="fav-item-info">
+                            <p>{property.type} - £{property.price}</p>
+                        </div>
+                        <button className="btn-remove" onClick={() => removeFromFavourites(property.id)}>
+                            ✕
+                        </button>
+                    </div>
+                ))}
+            </div>
 
             {favourites.length > 0 && (
-                <button onClick={clearFavourites}>
+                <button className="btn-clear" onClick={clearFavourites}>
                     Clear All Favourites
                 </button>
             )}

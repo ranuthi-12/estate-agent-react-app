@@ -22,26 +22,31 @@ const PropertyPage = () => {
   }
 
   return (
-    <section className="property-page">
+    <section className="property-page-section">
       {/* SHORT DESCRIPTION */}
-      <h2>{property.type}</h2>
-      <p>
-        <strong>Price:</strong> £{property.price}
-      </p>
-      <p>
-        <strong>Location:</strong> {property.location}
-      </p>
+      <div className="property-details-container">
+        <h2>{property.type}</h2>
+        <p>
+            <strong>Price:</strong> £{property.price}
+        </p>
+        <p>
+            <strong>Location:</strong> {property.location}
+        </p>
+      </div>
 
       {/* IMAGE GALLERY */}
-      <div className="image-gallery">
-        <img src={`/${mainImage}`} alt="Main property" width="500" />
+      <div className="property-main-gallery">
+
+        <div className="main-image-container">
+            <img src={`/${mainImage}`} alt="Main property" width="500" />
+        </div>
 
         <div className="thumbnails">
           {property.images.map((img, index) => (
             <img
               key={index}
-              src={`/${img}`}
-              alt={`Thumbnail ${index}`}
+              src={`/${img}`} 
+              alt={`Thumbnail ${index + 1}`}
               width="100"
               onClick={() => setMainImage(img)}
               style={{ cursor: "pointer", margin: "5px" }}
@@ -63,17 +68,19 @@ const PropertyPage = () => {
         </TabPanel>
 
         <TabPanel>
-          <img src={`/${property.floorplan}`} alt="Floor Plan" width="500" />
+          <img src={`/${property.floorplan}`} alt="Floor Plan" className="floorplan-img" width="500" />
         </TabPanel>
 
         <TabPanel>
-          <iframe
-            src={property.map}
-            width="600"
-            height="450"
-            loading="lazy"
-            title="Google Map"
-          ></iframe>
+            <div className="map-container">
+                <iframe
+                    src={property.map}
+                    width="600"
+                    height="450"
+                    loading="lazy"
+                    title="Google Map"
+                ></iframe>
+            </div>
         </TabPanel>
       </Tabs>
     </section>
