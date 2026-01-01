@@ -296,6 +296,113 @@ button,
   font-weight: 500;
 }
 
+/* ==== Favourites Sidebar Styles ==== */
+.fav-sidebar {
+  width: 360px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 30px;
+  border: 1px solid rgba(15, 40, 84, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  box-shadow: 0 10px 30px rgba(15, 40, 84, 0.05);
+}
+
+.fav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 16px;
+}
+
+.fav-header h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f2854;
+  margin: 0;
+}
+
+.fav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 500px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.fav-item {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #f8fafc;
+  border-radius: 16px;
+  border: 1px solid #f1f5f9;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.fav-item:hover {
+  border-color: #4988c4;
+  background: #f1f9ff;
+}
+
+.fav-item-info {
+  flex: 1;
+}
+
+.btn-remove {
+  background: #fee2e2;
+  color: #ef4444;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-remove:hover {
+  background: #ef4444;
+  color: #ffffff;
+}
+
+.btn-clear {
+  width: 100%;
+  padding: 14px;
+  background: transparent;
+  color: #ef4444;
+  background: #fee2e2;
+  border: 2px solid #fee2e2;
+  border-radius: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-clear:hover {
+  background-color:  #f1c7c7;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px 20px;
+  color: #94a3b8;
+  font-size: 14px;
+  border: 2px dashed #e2e8f0;
+  border-radius: 16px;
+}
+
+
 /* ==== Footer Styles ==== */
 
 .footer {
@@ -343,7 +450,17 @@ button,
     flex-direction: column;
     padding: 40px 20px;
   }
+
+  .fav-sidebar {
+    width: 100%;
+    position: static;
+  }
 }
+
+
+
+ 
+  
 
 
 
