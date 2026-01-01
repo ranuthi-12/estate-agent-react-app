@@ -12,7 +12,7 @@ body {
 }
 
 
-/* Header Styles */
+/* ==== Header Styles ==== */
 
 .site-header {
   position: fixed;
@@ -84,7 +84,124 @@ body {
   width: 80%;
 }
 
-/* Footer Styles */
+
+/* ==== Search Bar ==== */
+
+.search-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px; 
+  margin: 0 auto;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background-color: #374a6d;
+  border-radius: 32px;
+  position: relative;
+  z-index: 10;
+}
+
+.search-container {
+  width: 100%;
+  border-radius: 32px;
+  padding: 48px;
+  border: 1px solid rgba(73, 136, 196, 0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+.search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 32px; 
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Row 1: Full width location */
+.search-row-1 {
+  width: 100%;
+}
+
+/* Row 2: Property Type, Min Price, Max Price (3 cols) */
+.search-row-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Row 3: Min Bedrooms, Added After Year (2 cols) */
+.search-row-3 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Row 4: Search Button */
+.search-row-4 {
+  display: flex;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: #0b4354;
+  opacity: 0.9;
+}
+
+.input-field,
+.select-field {
+  width: 100%;
+  height: 56px;
+  padding: 0 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(176, 190, 193, 0.2);
+  background-color: rgba(202, 206, 213, 0.6);
+  font-size: 15px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.select-field {
+  appearance: none;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+}
+
+.search-btn {
+  height: 60px;
+  padding: 0 60px;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(135deg, #bde8f5 0%, #4988c4 100%);
+  color: #0f2854;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.search-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(189, 232, 245, 0.3);
+}
+
+/* ==== Footer Styles ==== */
 
 .footer {
   text-align: center;
@@ -94,7 +211,7 @@ body {
   margin-top: 60px;
 }
 
-/* Responsive Design */
+/* ==== Responsive Design ==== */
 
 @media (max-width: 768px) {
   .site-header {
@@ -115,7 +232,20 @@ body {
     font-size: 13px;
     padding: 6px 12px;
   }
+
+  .search-row-2,
+  .search-row-3 {
+    grid-template-columns: 1fr;
+  }
+  .search-container {
+    padding: 32px 20px;
+  }
+  .search-btn {
+    width: 100%;
+  }
 }
+
+  
 
 
 
