@@ -8,7 +8,7 @@
       "tenure": "Freehold",
       "description": "Attractive three bedroom semi-detached family home situated within 0.5 miles of Petts Wood station with fast trains to London and within easy walking distance of local shops, schools, bus routes and National Trust woodland. The property comprises; two receptions, fitted 18'9 x 10'1 kitchen/breakfast room and conservatory. The property also benefits from having a utility room and cloakroom. To the first floor there are three bedrooms and a family bathroom with separate WC. Additional features include double glazing, gas central heating and a well presented interior...",
       "location": "Petts Wood Road, Petts Wood, Orpington BR5",
-      "picture": "images/SearchBar.png",
+      "picture": "images/prop1pic1small.jpg",
       "images": [
         "images/prop1_1.jpg",
         "images/prop1_2.jpg",
@@ -17,7 +17,7 @@
         "images/prop1_5.jpg",
         "images/prop1_6.jpg"
       ],
-      "floorplan": "images/prop1_floorplan.jpg",
+      "floorplan": "images/prop1_floorplan.png",
       "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
       "url": "properties/prop1.html",
       "added": {
@@ -43,8 +43,8 @@
         "images/prop2_5.jpg",
         "images/prop2_6.jpg"
       ],
-      "floorplan": "images/prop2_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop2_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2490.6131476004884!2d0.0693926755055795!3d51.37340812048447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8ab6ac2bdc8d1%3A0xb0dde3c09939f924!2sCrofton%20Rd%2C%20Orpington%2C%20UK!5e0!3m2!1sen!2slk!4v1767367055096!5m2!1sen!2slk",
       "url": "properties/prop2.html",
       "added": {
         "month": "September",
@@ -69,8 +69,8 @@
         "images/prop3_5.jpg",
         "images/prop3_6.jpg"
       ],
-      "floorplan": "images/prop3_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop3_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9955.925995490134!2d-0.003245639060665782!3d51.40339463730234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8aa6e62559f07%3A0x7a40d87fea31d354!2sHigh%20St%2C%20Bromley%2C%20UK!5e0!3m2!1sen!2slk!4v1767367294038!5m2!1sen!2slk",
       "url": "properties/prop3.html",
       "added": {
         "month": "November",
@@ -95,8 +95,8 @@
         "images/prop4_5.jpg",
         "images/prop4_6.jpg"
       ],
-      "floorplan": "images/prop4_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop4_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2486.0110631074467!2d-0.01569962448793097!3d51.45795331431581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602720a2bcd1b%3A0xe90d5f6f362cc13!2sLewisham%20High%20St%2C%20London%2C%20UK!5e0!3m2!1sen!2slk!4v1767367402724!5m2!1sen!2slk",
       "url": "properties/prop4.html",
       "added": {
         "month": "August",
@@ -121,8 +121,8 @@
         "images/prop5_5.jpg",
         "images/prop5_6.jpg"
       ],
-      "floorplan": "images/prop5_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop5_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.2644454202587!2d0.05279457550887371!3d51.41656871733619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8abcee05c0c2d%3A0xef2993abdc468af1!2sOakwood%20Cl%2C%20Chislehurst%20BR7%205DD%2C%20UK!5e0!3m2!1sen!2slk!4v1767367472709!5m2!1sen!2slk",
       "url": "properties/prop5.html",
       "added": {
         "month": "July",
@@ -147,8 +147,8 @@
         "images/prop6_5.jpg",
         "images/prop6_6.jpg"
       ],
-      "floorplan": "images/prop6_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop6_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9933.865704046293!2d-0.029355393862789642!3d51.50465835542746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602ba7a12992f%3A0x4d821857a5e4a41!2sCanary%20Wharf%20Estate%2C%20London%2C%20UK!5e0!3m2!1sen!2slk!4v1767367536806!5m2!1sen!2slk",
       "url": "properties/prop6.html",
       "added": {
         "month": "November",
@@ -173,8 +173,8 @@
         "images/prop7_5.jpg",
         "images/prop7_6.jpg"
       ],
-      "floorplan": "images/prop7_floorplan.jpg",
-      "map": "https://www.google.com/maps?q=Petts+Wood+Road+BR5&output=embed",
+      "floorplan": "images/prop7_floorplan.png",
+      "map": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2484.633602153501!2d-0.0026142244859719624!3d51.48323941246946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760282aa676ac1%3A0x1b176dbf7fbb9e3e!2sGreenwich%20Park%20St%2C%20London%2C%20UK!5e0!3m2!1sen!2slk!4v1767367598425!5m2!1sen!2slk",
       "url": "properties/prop7.html",
       "added": {
         "month": "June",
