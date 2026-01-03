@@ -26,7 +26,7 @@ const ImageCard = ({ property, addToFavourites }) => {
         onDragStart={handleDragStart}
     >
       <div className="property-image-wrapper">
-        <img src={`/${picture}`} alt={type} className="property-image"/>
+        <img src={`${import.meta.env.BASE_URL}${picture}`} alt={type} className="property-image"/>
         <div className="property-badge">{tenure}</div>
       </div>
 
@@ -40,7 +40,7 @@ const ImageCard = ({ property, addToFavourites }) => {
         <p>
           Added: {added.month} {added.day}, {added.year}
         </p>
-        
+
         <div className="mt-auto">
           <Link to={`/property/${id}`} className="btn btn-outline-primary btn-sm me-2">
             View Property

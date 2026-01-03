@@ -7,7 +7,7 @@ const Gallery = ({searchTerm, favourites, setFavourites}) => {
   const [properties, setProperties] = useState([]);
 
   useEffect(() => {
-    fetch("/properties.json")
+    fetch(`${import.meta.env.BASE_URL}properties.json`)
       .then((response) => response.json())
       .then((data) => { setProperties(data.properties)})
       .catch((error) => {
