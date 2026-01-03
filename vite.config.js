@@ -9,4 +9,5 @@ export default defineConfig({
     environment: 'happy-dom', 
     setupFiles: './src/setupTests.js', 
   }, 
+  base: '/estate-agent-react-app/',
 })

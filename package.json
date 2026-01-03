@@ -3,13 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://ranuthi-12.github.io/estate-agent-react-app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "vitest", 
-    "test:watch": "vitest --watch", 
+    "test": "vitest",
+    "test:watch": "vitest --watch",
     "test:ui": "vitest --ui"
   },
   "dependencies": {
@@ -29,6 +32,7 @@
     "eslint": "^9.39.1",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.4.24",
+    "gh-pages": "^6.3.0",
     "globals": "^16.5.0",
     "happy-dom": "^20.0.11",
     "vite": "^7.2.4",
